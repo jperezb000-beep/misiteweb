@@ -1,2 +1,138 @@
 
-
+:root{
+  --primary: #0052cc;
+  --secondary: #ff6b00;
+  --bg: #f5f7fa;
+  --text: #222;
+  --white: #fff;
+  --radius: 8px;
+  --max-width: 1000px;
+}
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body{
+  font-family: 'Poppins', sans-serif;
+  color: var(--text);
+  background: var(--bg);
+  line-height: 1.6;
+}
+.container{
+  width: 90%;
+  max-width: var(--max-width);
+  margin: auto;
+}
+.hero{
+  background: var(--primary);
+  color: var(--white);
+  padding: 80px 0 60px;
+  text-align: center;
+}
+.hero h1{
+  font-size: 2.2rem;
+  margin-bottom: 10px;
+}
+.hero p{
+  margin-bottom: 25px;
+  font-size: 1.1rem;
+}
+.btn{
+  background: var(--secondary);
+  color: var(--white);
+  padding: 12px 25px;
+  border: none;
+  border-radius: var(--radius);
+  text-decoration: none;
+  font-weight: 600;
+  transition: .3s;
+}
+.btn:hover{
+  background: #e55d00;
+}
+section{
+  padding: 60px 0;
+}
+h2{
+  text-align: center;
+  margin-bottom: 35px;
+  font-size: 1.8rem;
+}
+.grid{
+  display: grid;
+  gap: 25px;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+.card, .plan{
+  background: var(--white);
+  padding: 25px;
+  border-radius: var(--radius);
+  box-shadow: 0 2px 8px rgba(0,0,0,.08);
+}
+.plan{
+  text-align: center;
+  position: relative;
+}
+.plan.popular{
+  border: 2px solid var(--secondary);
+  transform: scale(1.05);
+}
+.price{
+  font-size: 2rem;
+  color: var(--primary);
+  display: block;
+  margin: 10px 0;
+}
+.plan ul{
+  list-style: none;
+  margin: 15px 0;
+  text-align: left;
+}
+.plan li{
+  margin-bottom: 8px;
+}
+.contacto form{
+  display: flex;
+  flex-direction: column;
+  max-width: 550px;
+  margin: auto;
+}
+.contacto input, .contacto textarea{
+  margin-bottom: 15px;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: var(--radius);
+  font-size: 1rem;
+}
+.contacto button{
+  background: var(--primary);
+  color: var(--white);
+  border: none;
+  padding: 14px;
+  border-radius: var(--radius);
+  font-size: 1rem;
+  cursor: pointer;
+  transition: .3s;
+}
+.contacto button:hover{
+  background: #0041a8;
+}
+.oculto{
+  display: none;
+  text-align: center;
+  margin-top: 15px;
+  color: green;
+  font-weight: 600;
+}
+footer{
+  background: #111;
+  color: #ccc;
+  text-align: center;
+  padding: 20px 0;
+  font-size: .9rem;
+}
+@media(max-width:600px){
+  .hero h1{font-size: 1.7rem;}
+  .plan.popular{transform: scale(1);}
+}
