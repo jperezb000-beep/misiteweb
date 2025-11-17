@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Mantenimiento de PC | TuServicioTécnico</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- HERO -->
+  <header class="hero">
+    <div class="container">
+      <h1>Mantenimiento y Reparación de Computadoras</h1>
+      <p>Solucionamos fallas, optimizamos velocidad y extendemos la vida útil de tu equipo.</p>
+      <a href="#contacto" class="btn">Solicitar diagnóstico gratis</a>
+    </div>
+  </header>
+
+  <!-- SERVICIOS -->
+  <section id="servicios" class="servicios">
+    <div class="container">
+      <h2>Servicios que ofrecemos</h2>
+      <div class="grid">
+        <div class="card">
+          <h3>Limpieza y mantenimiento preventivo</h3>
+          <p>Eliminación de polvo, cambio de pasta térmica y chequeo de ventiladores.</p>
+        </div>
+        <div class="card">
+          <h3>Formateado e instalación de OS</h3>
+          <p>Windows, Linux o macOS con drivers y programas básicos.</p>
+        </div>
+        <div class="card">
+          <h3>Actualización de hardware</h3>
+          <p>RAM, SSD, tarjeta gráfica: asesoramos e instalamos.</p>
+        </div>
+        <div class="card">
+          <h3>Recuperación de datos</h3>
+          <p>Rescatamos archivos de discos dañados o formateados por error.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRECIOS -->
+  <section id="precios" class="precios">
+    <div class="container">
+      <h2>Planes y precios</h2>
+      <div class="grid">
+        <div class="plan">
+          <h3>Básico</h3>
+          <span class="price">$30</span>
+          <ul>
+            <li>Diagnóstico + limpieza</li>
+            <li>Optimización de inicio</li>
+            <li>Revisión antivirus</li>
+          </ul>
+        </div>
+        <div class="plan popular">
+          <h3>Estándar</h3>
+          <span class="price">$60</span>
+          <ul>
+            <li>Todo lo del Básico</li>
+            <li>Formateado + drivers</li>
+            <li>Instalación de Office</li>
+          </ul>
+        </div>
+        <div class="plan">
+          <h3>Premium</h3>
+          <span class="price">$100</span>
+          <ul>
+            <li>Todo lo del Estándar</li>
+            <li>Cambio pasta térmica</li>
+            <li>Actualización SSD/RAM*</li>
+          </ul>
+          <small>*Sin costo de piezas</small>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACTO -->
+  <section id="contacto" class="contacto">
+    <div class="container">
+      <h2>Contáctanos</h2>
+      <form id="formContacto">
+        <input type="text" name="nombre" placeholder="Tu nombre" required>
+        <input type="email" name="email" placeholder="Tu e-mail" required>
+        <input type="tel" name="telefono" placeholder="Teléfono (opcional)">
+        <textarea name="mensaje" rows="5" placeholder="Cuéntanos el problema de tu equipo" required></textarea>
+        <button type="submit">Enviar mensaje</button>
+      </form>
+      <p id="msgExito" class="oculto">¡Gracias! Te responderemos en menos de 24 h.</p>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container">
+      <p>© <span id="year"></span> TuServicioTécnico. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
